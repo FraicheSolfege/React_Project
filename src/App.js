@@ -1,10 +1,15 @@
 import "./App.css";
+import Header from "./components/header.jsx";
+import Footer from "./components/footer.jsx";
+import MainContent from "./components/mainContent.jsx";
+// import MainContent 
 
 function App() {
   return (
     <div className="App">
-      <h1>Nathan and Justin are COol</h1>
-      <h2>The finals give me heartburn.</h2>
+      <Header />
+      <MainContent />
+      <Footer />
     </div>
   );
 }
