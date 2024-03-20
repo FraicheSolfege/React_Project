@@ -1,0 +1,29 @@
+[
+    {
+        "id": 1,
+        "title": "The Shawshank Redemption",
+        "year": 1994,
+        "genre": "Drama",
+        "director": "Frank Darabont",
+        "cover" : "ShawshankRedemption.jpg",
+        "actors": ["Tim Robbins", "Morgan Freeman", "Bob Gunton"]
+    },
+    {
+        "id": 2,
+        "title": "The Godfather",
+        "year": 1972,
+        "genre": "Crime",
+        "director": "Francis Ford Coppola",
+        "cover" : "TheGodfather.jpg",
+        "actors": ["Marlon Brando", "Al Pacino", "James Caan"]
+    },
+    {
+        "id": 3,
+        "title": "The Dark Knight",
+        "year": 2008,
+        "genre": "Action",
+        "director": "Christopher Nolan",
+        "cover" : "TheDarkKnight.jpg",
+        "actors": ["Christian Bale", "Heath Ledger", "Aaron Eckhart"]
+    }
+]
