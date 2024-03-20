@@ -16,8 +16,8 @@ body {
   font-weight: 400;
   background-color: #424942;
   min-height: 100vh;
-  border-bottom: 2.6rem solid #edc84b;
-  border-top: 2.6rem solid #edc84b;
+  border-bottom: 2.6rem solid #dd9f4c;
+  border-top: 2.6rem solid #dd9f4c;
   padding: 3.2rem;
   padding-bottom: 6rem;
 }
@@ -104,8 +104,6 @@ body {
   margin: 0%;
   overflow: hidden;
   text-align: center;
-  padding-left: 2%;
-  padding-right: 2%;
 }
 
 .navbar a {
@@ -128,4 +126,11 @@ body {
 .navbar {
   width: 100%;
 
+}
+
+.logo{
+  margin: 0%;
+  padding: 0px;
+  width: 25%;
+  height: auto;
 }
