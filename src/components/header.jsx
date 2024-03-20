@@ -2,9 +2,10 @@
 
 function Header(){
     return (
-        <>
-            <h1>ak;sldflasjf</h1>
-        </>
+        <header className="header">
+            <img src=".\public\froglogo.png" alt="logo" />
+            <h1>Frog Heads: Movie Database</h1>
+        </header>
     )
 }
 
