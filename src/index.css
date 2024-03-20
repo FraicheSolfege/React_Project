@@ -37,6 +37,17 @@ body {
   text-align: center;
 }
 
+.logo{
+  margin: 0%;
+  padding: 0px;
+  width: 25%;
+  height: auto;
+}
+
+.logo2 {
+  width: 100%;
+}
+
 .header h1{
   color: #edc84b;
   text-transform: center;
@@ -128,13 +139,6 @@ body {
 .navbar {
   width: 100%;
 
-}
-
-.logo{
-  margin: 0%;
-  padding: 0px;
-  width: 25%;
-  height: auto;
 }
 
 .movies {

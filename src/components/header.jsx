@@ -1,11 +1,13 @@
+function Header() {
+  return (
+    <header className="header">
+      {/* Smaller logo */}
+      {/* <img className="logo" src='images/logo/froglogo.png' alt="logo" /> */}
 
-
-function Header(){
-    return (
-        <header className="header">
-            <img className="logo" src='images/froglogo.png' alt="logo" />
-        </header>
-    )
+      {/* Bigger Logo */}
+      <img className="logo2" src="images/logo/froglogo2.png" alt="logo2" />
+    </header>
+  );
 }
 
-export default Header
+export default Header;
