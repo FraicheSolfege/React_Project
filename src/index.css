@@ -22,6 +22,40 @@ body {
 
 }
 
+
+.navbar ul {
+  list-style-type: none;
+  background-color: hsl(0, 0%, 25%);
+  padding: 0px;
+  margin: 0%;
+  overflow: hidden;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 15px;
+  display: block;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: hsl(0, 0%, 10%);
+}
+
+.navbar li {
+  float: left;
+  
+
+}
+.navbar {
+  width: 100%;
+
+}
+
+
 .container {
   max-width: 80rem;
   margin: 0 auto;
@@ -109,38 +143,6 @@ body {
   background-color: #e9bb24;
 }
 
-.navbar ul {
-  list-style-type: none;
-  background-color: hsl(0, 0%, 25%);
-  padding: 0px;
-  margin: 0%;
-  overflow: hidden;
-  text-align: center;
-  border-radius: 10px;
-}
-
-.navbar a {
-  color: white;
-  text-decoration: none;
-  padding: 15px;
-  display: block;
-  text-align: center;
-}
-
-.navbar a:hover {
-  background-color: hsl(0, 0%, 10%);
-}
-
-.navbar li {
-  float: left;
-  
-
-}
-.navbar {
-  width: 100%;
-
-}
-
 .movies {
   list-style: none;
   display: grid;
@@ -154,8 +156,8 @@ body {
 }
 
 .movie img {
-  width: 13rem;
-  /* aspect-ratio: 1; */
+  width: 200px;
+  height: 300px;
   align-self: start;
 }
 
@@ -177,9 +179,4 @@ body {
   font-weight: 300;
   font-style: italic;
   margin-bottom: auto;
-}
-
-.movie span {
-  display: block;
-  font-size: 1.0rem;
 }
