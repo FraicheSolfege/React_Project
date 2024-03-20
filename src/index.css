@@ -55,7 +55,6 @@ body {
 
 }
 
-
 .container {
   max-width: 80rem;
   margin: 0 auto;
@@ -93,38 +92,9 @@ body {
   display: block;
 }
 
-.header h1::before,
-.header h2::after {
-  display: block;
-  content: "";
-  height: 3px;
-  width: 12rem;
-  background-color: #edc84b;
-  position: absolute;
-  top: calc(50% - 1px);
-}
-
-.header ha::before{
-  left: 0;
-}
-
-.header h1:after{
-  right: 0;
-
-}
-
-
-/* ... */
 
 .footer {
   font-size: 1.4rem;
-}
-
-.order {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2.4rem;
 }
 
 .btn {
