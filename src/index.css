@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 *{
   margin: 0;
@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  font-family: "Roboto Mono", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #eca64a;
   font-weight: 400;
   background-color: #424942;
@@ -147,6 +147,6 @@ body {
   font-size: 1.0rem;
   color: white;
   font-weight: 300;
-  font-style: italic;
+  /* font-style: italic; */
   margin-bottom: auto;
 }
