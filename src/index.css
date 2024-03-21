@@ -24,11 +24,11 @@ body {
 
 .navbar {
   width: 100%;
-  display: flex;
-  justify-content: space-evenly;
 }
 
 .navbar ul {
+  display: flex;
+  justify-content: space-evenly;
   list-style-type: none;
   background-color: hsl(0, 0%, 25%);
   padding: 0px;
