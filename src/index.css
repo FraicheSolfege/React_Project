@@ -22,6 +22,9 @@ body {
 
 }
 
+.navbar {
+  width: 100%;
+}
 
 .navbar ul {
   list-style-type: none;
@@ -47,11 +50,6 @@ body {
 
 .navbar li {
   float: left;
-  
-
-}
-.navbar {
-  width: 100%;
 
 }
 
@@ -129,6 +127,7 @@ body {
   width: 200px;
   height: 300px;
   align-self: start;
+  object-fit: cover;
 }
 
 .movie div {
