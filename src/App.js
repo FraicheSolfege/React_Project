@@ -3,6 +3,7 @@ import Header from "./components/header.jsx";
 // import Footer from "./components/footer.jsx";
 import MainContent from "./components/mainContent.jsx";
 import NavBar from "./components/navbar.jsx";
+import Form from "./components/form.jsx";
 // import MainContent 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
     <div className="container">
       <Header />
       <NavBar />
+      <Form />
       <MainContent />
       {/* <Footer /> */}
     </div>

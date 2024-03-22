@@ -151,3 +151,16 @@ body {
   /* font-style: italic; */
   margin-bottom: auto;
 }
+
+
+/*          FORM         */
+
+.myForm{
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+  background-color: hsl(0, 0%, 25%);
+  padding: 1.6rem;
+  margin: 1.6rem 0;
+}
