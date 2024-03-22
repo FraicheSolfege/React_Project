@@ -15,7 +15,7 @@ function Form(){
           console.log(response);
         });
       };
-    //   console.log(axiosPostData)
+      console.log(axiosPostData)
     return(
         <div>
             <form className="myForm">
@@ -25,15 +25,15 @@ function Form(){
                 <input type="text" placeholder="Starring" value={starring} onChange={e => setStarring(e.target.value)}/>
                 <input type="text" placeholder="Genre" value={genre} onChange={e => setGenre(e.target.value)}/>
                 <input type="text" placeholder="Year" value={year} onChange={e => setYear(e.target.value)}/>
-                <button type="submit" onClick={() => axios.post(axiosPostData({
-                    image: image,
+                <button type="submit" onClick={() => { 
+                    axiosPostData({
                     title: title,   
-                    director: director,
-                    starring: starring,
-                    genre: genre,
                     year: year,
-                
-                }))}>Add Movie</button>
+                    genre: genre,
+                    director: director,
+                    cover: image,
+                    actors: starring
+                })}}>Add Movie</button>
             </form>
         </div>
     )
