@@ -4,7 +4,7 @@ import axios from 'axios';
 
 
 function DeleteDropdown(){
-    const [movies, setMovies] =useState([])
+    const [movies, setMovies] = useState([])
     const [selectedMovie, setSelectedMovie] = useState('')
 
 
@@ -36,7 +36,16 @@ function DeleteDropdown(){
       )
       }
 
+// function DeleteDropdown(movies){
+//   for (let movie of movies){
+//     const newOption = document.createElement('titles')
+//     newOption.value = movie.title;
+//     newOption.textContent = movie.title
+//     newOption.dataset.genericApijson = JSON.stringify(movie);
 
+//   }
+
+// }
 
 
 export default DeleteDropdown

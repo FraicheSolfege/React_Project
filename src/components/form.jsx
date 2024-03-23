@@ -54,7 +54,7 @@ function AddForm(){
     const [starring, setStarring] = useState('');
     const [genre, setGenre] = useState('');
     const [year, setYear] = useState('');
-    const [image, setImage] = useState('');
+    const [cover, setCover] = useState('');
 
     const axiosPostData = (newObject) => {
         // Parse the 'starring' string into an array of strings
@@ -74,7 +74,7 @@ function AddForm(){
             actors: starring,
             genre: genre,
             year: year,
-            cover: image
+            cover: cover
         };
         axiosPostData(newObject);
     };
@@ -82,14 +82,13 @@ function AddForm(){
     return(
         <div>
             <form className="myForm" onSubmit={handleSubmit}>
-                <input type="text" placeholder="Image" onChange={e => setImage(e.target.files)} />
+                <input type="text" placeholder="Image" value={cover} onChange={e => setCover(e.target.value)} />
                 <input type="text" placeholder="Title" value={title} onChange={e => setTitle(e.target.value)}/>
                 <input type="text" placeholder="Director" value={director} onChange={e => setDirector(e.target.value)}/>
                 <input type="text" placeholder="Starring" value={starring} onChange={e => setStarring(e.target.value)}/>
                 <input type="text" placeholder="Genre" value={genre} onChange={e => setGenre(e.target.value)}/>
                 <input type="text" placeholder="Year" value={year} onChange={e => setYear(e.target.value)}/>
                 <button type="submit">Add Movie</button>
-                <button type="submit">Update Movie</button>
             </form>
         </div>
     )

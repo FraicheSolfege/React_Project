@@ -26,14 +26,15 @@ function MainContent(){
         <ul className="movies">
             {apiData.map(movie => (
                 <li className="movie">
-                    <img src={`/images/coverart/${movie.cover}`} alt="cover"/>
+                    {/* <img src={`/images/coverart/${movie.cover}`} alt="cover"/> */}
+                    <img src={movie.cover} alt="cover"/>
                     <div>
-                    <h3>{movie.title}</h3>
-                    <p>Director: {movie.director}</p>
-                    {/* <p>{`Starring: ${movie.actors}`}` </p> */}
-                    <p>Starring: {movie.actors}</p>
-                    <p>Genre: {movie.genre}</p>
-                    <p>Year: {movie.year}</p>
+                      <h3>{movie.title}</h3>
+                      <p>Director: {movie.director}</p>
+                      {/* <p>{`Starring: ${movie.actors}`}` </p> */}
+                      <p>Starring: {movie.actors}</p>
+                      <p>Genre: {movie.genre}</p>
+                      <p>Year: {movie.year}</p>
                     </div>
                 </li>
             ))}
