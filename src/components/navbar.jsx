@@ -2,14 +2,14 @@ function NavBar(){
   return (
       <nav className="navbar">
           <ul>
-              <li><a href="home.html">Home</a></li>
-              <li><a href="comingsoon.html">Coming Soon</a></li>
-              <li><a href="nowplaying.html">Classics</a></li>
-              <li><a href="nowplaying.html">Trending</a></li>
-              <li><a href="nowplaying.html">Recommendations</a></li>
-              <li><a href="nowplaying.html">Genres</a></li>
-              <li><a href="search.html">Search</a></li>
-              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="/home">Home</a></li>
+              <li><a href="/comingsoon">Coming Soon</a></li>
+              <li><a href="/classics">Classics</a></li>
+              <li><a href="/trending">Trending</a></li>
+              <li><a href="/recommendations">Recommendations</a></li>
+              <li><a href="/newreleases">New Releases</a></li>
+              <li><a href="/search">Search</a></li>
+              <li><a href="/contact">Contact Us</a></li>
           </ul>
       </nav>
   )
