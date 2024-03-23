@@ -1,21 +1,20 @@
-import {React, useEffect, useState } from "react";
-import axios from 'axios';
+import { React, useEffect, useState } from "react";
+import axios from "axios";
 
-function MainContent(){
-    const [apiData, setApiData] = useState([]);
+function MainContent() {
+  const [apiData, setApiData] = useState([]);
 
-// \/ GET ALL FUNCTIONS BELOW \/ \\
+  // \/ GET ALL FUNCTIONS BELOW \/ \\
   // Gets it all and gives it to ya.
   // axiosGetData should be used inside a useEffect
-  // when being used for a component. Doesn't 
+  // when being used for a component. Doesn't
   // always have to though.
-  const axiosGetAllData = async() => {
-    await axios.get('http://localhost:9000/api')
-    .then(res => {
+  const axiosGetAllData = async () => {
+    await axios.get("http://localhost:9000/api").then((res) => {
       const returnedApiData = res.data;
       setApiData(returnedApiData);
-    })
-  }
+    });
+  };
   // ||   Should be used for the initial get all
   // \/ upon loading the display screen.
   useEffect(() => {
@@ -68,4 +67,4 @@ function MainContent(){
     )
 }
 
-export default MainContent
+export default MainContent;

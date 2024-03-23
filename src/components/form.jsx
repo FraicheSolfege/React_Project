@@ -1,5 +1,5 @@
-import {React, useState} from 'react';
-import axios from 'axios';
+import { React, useState } from "react";
+import axios from "axios";
 
 // function Form(){
 //     const [title, setTitle] = useState('');
@@ -10,7 +10,6 @@ import axios from 'axios';
 //     const [image, setImage] = useState('');
 
 //     // parse function
-
 
 //     const axiosPostData = (newObject) => {
 //         axios.post(`http://localhost:9000/addItem`, newObject)
@@ -27,9 +26,9 @@ import axios from 'axios';
 //                 <input type="text" placeholder="Starring" value={starring.split(", ")} onChange={e => setStarring(e.target.value)}/>
 //                 <input type="text" placeholder="Genre" value={genre} onChange={e => setGenre(e.target.value)}/>
 //                 <input type="text" placeholder="Year" value={year} onChange={e => setYear(e.target.value)}/>
-//                 <button type="submit" onClick={() => { 
+//                 <button type="submit" onClick={() => {
 //                     axiosPostData({
-//                     title: title,   
+//                     title: title,
 //                     year: year,
 //                     genre: genre,
 //                     director: director,
@@ -56,15 +55,14 @@ function AddForm(){
     const [year, setYear] = useState('');
     const [cover, setCover] = useState('');
 
-    const axiosPostData = (newObject) => {
-        // Parse the 'starring' string into an array of strings
-        newObject.actors = newObject.actors.split(", ");
+  const axiosPostData = (newObject) => {
+    // Parse the 'starring' string into an array of strings
+    newObject.actors = newObject.actors.split(", ");
 
-        axios.post(`http://localhost:9000/addItem`, newObject)
-        .then(response => {
-          console.log(response);
-        });
-    };
+    axios.post(`http://localhost:9000/addItem`, newObject).then((response) => {
+      console.log(response);
+    });
+  };
 
     const handleSubmit = (event) => {
         event.preventDefault();
@@ -95,4 +93,3 @@ function AddForm(){
 }
 
 export default AddForm;
-

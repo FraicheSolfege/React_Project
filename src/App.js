@@ -4,17 +4,17 @@ import Header from "./components/header.jsx";
 import MainContent from "./components/mainContent.jsx";
 import NavBar from "./components/navbar.jsx";
 import AddForm from "./components/form.jsx";
-import {Routes, Route} from 'react-router-dom'
+import { Routes, Route } from "react-router-dom";
 import ComingSoon from "./components/comingsoon.jsx";
 import Trending from "./components/trending.jsx";
 import Classics from "./components/classics.jsx";
 import Recommendations from "./components/recommendation.jsx";
 import NewReleases from "./components/newreleases.jsx";
-import Search from "./components/search.jsx";
+import UpdateMovie from "./components/updateMovie.jsx";
 import Contact from "./components/contact.jsx";
-import DeleteDropdown from "./components/deletedropdown.jsx"
+import DeleteDropdown from "./components/deletedropdown.jsx";
 
-// import MainContent 
+// import MainContent
 
 function App() {
   return (
@@ -25,14 +25,14 @@ function App() {
       <DeleteDropdown />
       <Routes>
         <Route index element={<MainContent />} />
-        <Route path='/home' element={<MainContent/>}/>
-        <Route path='/comingsoon' element={<ComingSoon/>}/>
-        <Route path='/classics' element={<Classics/>}/>
-        <Route path='/trending' element={<Trending/>}/>
-        <Route path='/recommendations' element={<Recommendations/>}/>
-        <Route path='/newreleases' element={<NewReleases/>}/>
-        <Route path='/search' element={<Search/>}/>
-        <Route path='/contact' element={<Contact/>}/>
+        <Route path="/home" element={<MainContent />} />
+        <Route path="/comingsoon" element={<ComingSoon />} />
+        <Route path="/classics" element={<Classics />} />
+        <Route path="/trending" element={<Trending />} />
+        <Route path="/recommendations" element={<Recommendations />} />
+        <Route path="/newreleases" element={<NewReleases />} />
+        <Route path="/updateMovie" element={<UpdateMovie />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       {/* <MainContent /> */}
       {/* <Footer /> */}
@@ -44,12 +44,10 @@ export default App;
 
 // all function set to hookstate
 
-
 // import React from 'react';
 // import { useEffect, useState } from 'react';
 // import axios from 'axios';
 // // import PostPage from './components/postpage/PostPage';
-
 
 // const App = () => {
 //   const [apiData, setApiData] = useState([]);
@@ -58,7 +56,7 @@ export default App;
 //   // \/ GET ALL FUNCTIONS BELOW \/ \\
 //   // Gets it all and gives it to ya.
 //   // axiosGetData should be used inside a useEffect
-//   // when being used for a component. Doesn't 
+//   // when being used for a component. Doesn't
 //   // always have to though.
 //   const axiosGetAllData = async() => {
 //     await axios.get('http://localhost:9000/api')
@@ -105,7 +103,6 @@ export default App;
 //   }
 //   // /\ UPDATE FUNCTION ABOVE /\ \\
 
-
 //   // let myCurrentObj = {questions: {"How do you define a function in Python?": "def",
 //   // "How do you create a list in Python?": "[]",
 //   // "How do you comment a single line in Python?": "#",
@@ -125,16 +122,8 @@ export default App;
 //         <button onClick={() => axiosUpdateItem({"id": 2,"title": "YEET","year": 1994,"genre": "Drama","director": "Frank Darabont","cover": "ShawshankRedemption.jpg","actors": ["Tim Robbins","Morgan Freeman","Bob Gunton"]})} >Update</button>
 //       </div>
 //       {/* <PostPage /> */}
-//     </> 
+//     </>
 //   )
 // }
 
 // export default App
-
-
-
-
-
-
-
-
