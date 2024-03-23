@@ -3,7 +3,7 @@ import Header from "./components/header.jsx";
 // import Footer from "./components/footer.jsx";
 import MainContent from "./components/mainContent.jsx";
 import NavBar from "./components/navbar.jsx";
-import Form from "./components/form.jsx";
+import AddForm from "./components/form.jsx";
 import {Routes, Route} from 'react-router-dom'
 import ComingSoon from "./components/comingsoon.jsx";
 import Trending from "./components/trending.jsx";
@@ -12,6 +12,7 @@ import Recommendations from "./components/recommendation.jsx";
 import NewReleases from "./components/newreleases.jsx";
 import Search from "./components/search.jsx";
 import Contact from "./components/contact.jsx";
+import DeleteDropdown from "./components/deletedropdown.jsx"
 
 // import MainContent 
 
@@ -20,6 +21,8 @@ function App() {
     <div className="container">
       <Header />
       <NavBar />
+      <AddForm />
+      <DeleteDropdown />
       <Routes>
         <Route index element={<MainContent />} />
         <Route path='/home' element={<MainContent/>}/>
@@ -31,7 +34,6 @@ function App() {
         <Route path='/search' element={<Search/>}/>
         <Route path='/contact' element={<Contact/>}/>
       </Routes>
-      {/* <Form /> */}
       {/* <MainContent /> */}
       {/* <Footer /> */}
     </div>
