@@ -3,7 +3,8 @@ import Header from "./components/header.jsx";
 // import Footer from "./components/footer.jsx";
 import MainContent from "./components/mainContent.jsx";
 import NavBar from "./components/navbar.jsx";
-import Form from "./components/form.jsx";
+import AddForm from "./components/form.jsx";
+import DeleteDropdown from "./components/deletedropdown.jsx";
 // import MainContent 
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
     <div className="container">
       <Header />
       <NavBar />
-      <Form />
+      <AddForm />
+      <DeleteDropdown />
       <MainContent />
       {/* <Footer /> */}
     </div>
