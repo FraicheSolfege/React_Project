@@ -82,13 +82,14 @@ function AddForm(){
     return(
         <div>
             <form className="myForm" onSubmit={handleSubmit}>
-                <input type="file" placeholder="Image" onChange={e => setImage(e.target.files[0])} />
+                <input type="text" placeholder="Image" onChange={e => setImage(e.target.files)} />
                 <input type="text" placeholder="Title" value={title} onChange={e => setTitle(e.target.value)}/>
                 <input type="text" placeholder="Director" value={director} onChange={e => setDirector(e.target.value)}/>
                 <input type="text" placeholder="Starring" value={starring} onChange={e => setStarring(e.target.value)}/>
                 <input type="text" placeholder="Genre" value={genre} onChange={e => setGenre(e.target.value)}/>
                 <input type="text" placeholder="Year" value={year} onChange={e => setYear(e.target.value)}/>
                 <button type="submit">Add Movie</button>
+                <button type="submit">Update Movie</button>
             </form>
         </div>
     )

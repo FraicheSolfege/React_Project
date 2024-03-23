@@ -31,9 +31,8 @@ function MainContent(){
                     <h3>{movie.title}</h3>
                     <p>Director: {movie.director}</p>
                     {/* <p>{`Starring: ${movie.actors}`}` </p> */}
-                    <p>Starring: {movie.actors.join(', ')}</p>
+                    <p>Starring: {movie.actors}</p>
                     <p>Genre: {movie.genre}</p>
-
                     <p>Year: {movie.year}</p>
                     </div>
                 </li>
