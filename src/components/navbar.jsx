@@ -9,25 +9,13 @@ function NavBar() {
           <Link to="/home">Home</Link>
         </li>
         <li>
-          <Link to="/comingsoon">Coming Soon</Link>
+          <Link to="/form">Add Movie</Link>
         </li>
         <li>
-          <Link to="/classics">Classics</Link>
-        </li>
-        <li>
-          <Link to="/trending">Trending</Link>
-        </li>
-        <li>
-          <Link to="/recommendations">Recommendations</Link>
-        </li>
-        <li>
-          <Link to="/newreleases">New Releases</Link>
+          <Link to="/deletedropdown">Remove A Movie</Link>
         </li>
         <li>
           <Link to="/updateMovie">Update Movies</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contact Us</Link>
         </li>
       </ul>
     </nav>

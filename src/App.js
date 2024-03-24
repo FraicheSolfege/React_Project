@@ -1,38 +1,53 @@
-import React from "react";
+import { React, useEffect, useState } from "react";
+import axios from "axios";
 import Header from "./components/header.jsx";
 // import Footer from "./components/footer.jsx";
 import MainContent from "./components/mainContent.jsx";
 import NavBar from "./components/navbar.jsx";
 import AddForm from "./components/form.jsx";
 import { Routes, Route } from "react-router-dom";
-import ComingSoon from "./components/comingsoon.jsx";
-import Trending from "./components/trending.jsx";
-import Classics from "./components/classics.jsx";
-import Recommendations from "./components/recommendation.jsx";
-import NewReleases from "./components/newreleases.jsx";
 import UpdateMovie from "./components/updateMovie.jsx";
-import Contact from "./components/contact.jsx";
 import DeleteDropdown from "./components/deletedropdown.jsx";
 
 // import MainContent
 
 function App() {
+  const [apiData, setApiData] = useState([]);
+
+  // \/ GET ALL FUNCTIONS BELOW \/ \\
+  // Gets it all and gives it to ya.
+  // axiosGetData should be used inside a useEffect
+  // when being used for a component. Doesn't
+  // always have to though.
+  const axiosGetAllData = async () => {
+    await axios.get("http://localhost:9000/api").then((res) => {
+      const returnedApiData = res.data;
+      setApiData(returnedApiData);
+    });
+  };
+  // ||   Should be used for the initial get all
+  // \/ upon loading the display screen.
+  useEffect(() => {
+    axiosGetAllData();
+  }, []);
+  // /\ GET ALL FUNCTIONS ABOVE /\ \\
+
   return (
     <div className="container">
       <Header />
       <NavBar />
-      <AddForm />
-      <DeleteDropdown />
       <Routes>
         <Route index element={<MainContent />} />
-        <Route path="/home" element={<MainContent />} />
-        <Route path="/comingsoon" element={<ComingSoon />} />
-        <Route path="/classics" element={<Classics />} />
-        <Route path="/trending" element={<Trending />} />
-        <Route path="/recommendations" element={<Recommendations />} />
-        <Route path="/newreleases" element={<NewReleases />} />
-        <Route path="/updateMovie" element={<UpdateMovie />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/home" element={<MainContent apiData={apiData} />} />
+        <Route path="/form" element={<AddForm />} />
+        <Route
+          path="/updateMovie"
+          element={<UpdateMovie apiData={apiData} />}
+        />
+        <Route
+          path="/deletedropdown"
+          element={<DeleteDropdown apiData={apiData} />}
+        />
       </Routes>
       {/* <MainContent /> */}
       {/* <Footer /> */}

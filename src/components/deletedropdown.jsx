@@ -1,51 +1,39 @@
-import {React, useState, useEffect} from 'react';
-import axios from 'axios';
+import { React, useState } from "react";
+import axios from "axios";
 
-
-
-function DeleteDropdown(){
-    const [movies, setMovies] = useState([])
-    const [selectedMovie, setSelectedMovie] = useState('')
-
-
-    // const populateMovies = movies.keys(movies).map(key => ({
-    //   title: key
-    // }));
-
-    // function movieHandler(e){
-    //   movieSelect = e.target.value;
-  // }
+function DeleteDropdown({ apiData }) {
+  const [selectedMovie, setSelectedMovie] = useState("");
   let handleMovieSelect = (e) => {
-    setSelectedMovie(e.target.value)
-  }
+    const selectedId = e.target.value;
+    setSelectedMovie(selectedId);
+  };
 
-    const axiosDeleteData = async(id) => {
-        await axios.delete(`http://localhost:9000/deleteItem/${id}`);
-      }
+  const axiosDeleteData = async (id) => {
+    await axios.delete(`http://localhost:9000/deleteItem/${id}`);
+  };
 
-      return(
-        <div>
-            <div className="myForm">
-            <label>Remove a movie</label>
-            <select name="movie" onChange={handleMovieSelect}>
-            {movies.map((movie) => <option key={movie.id} value={movie.id}>{movie.title}</option>)}
+  return (
+    <div>
+      <div className="myForm">
+        <label>Remove a movie</label>
+        <select name="movie" onChange={handleMovieSelect} value={selectedMovie}>
+          <option value="">Select a movie to delete</option>
+          {apiData.map((movie) => (
+            <option key={movie.id} value={movie.id}>
+              {movie.title}
+            </option>
+          ))}
         </select>
-            <button type="submit" onClick={() => axiosDeleteData(selectedMovie)}>Delete that B!</button>
-            </div>
-        </div>
-      )
-      }
+        <button
+          type="button"
+          onClick={() => axiosDeleteData(selectedMovie)}
+          disabled={!selectedMovie}
+        >
+          Delete that B!
+        </button>
+      </div>
+    </div>
+  );
+}
 
-// function DeleteDropdown(movies){
-//   for (let movie of movies){
-//     const newOption = document.createElement('titles')
-//     newOption.value = movie.title;
-//     newOption.textContent = movie.title
-//     newOption.dataset.genericApijson = JSON.stringify(movie);
-
-//   }
-
-// }
-
-
-export default DeleteDropdown
+export default DeleteDropdown;
