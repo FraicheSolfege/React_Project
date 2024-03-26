@@ -37,7 +37,7 @@ function App() {
       <Header />
       <NavBar />
       <Routes>
-        <Route index element={<MainContent />} />
+        <Route index element={<MainContent apiData={apiData} />} />
         <Route path="/home" element={<MainContent apiData={apiData} />} />
         <Route path="/form" element={<AddForm />} />
         <Route
