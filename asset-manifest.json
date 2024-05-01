@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/https//FraicheSolfege.github.io/React_Project/static/css/main.69f2859c.css",
+    "main.js": "/https//FraicheSolfege.github.io/React_Project/static/js/main.21cb3d0e.js",
+    "index.html": "/https//FraicheSolfege.github.io/React_Project/index.html",
+    "main.69f2859c.css.map": "/https//FraicheSolfege.github.io/React_Project/static/css/main.69f2859c.css.map",
+    "main.21cb3d0e.js.map": "/https//FraicheSolfege.github.io/React_Project/static/js/main.21cb3d0e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69f2859c.css",
+    "static/js/main.21cb3d0e.js"
+  ]
+}
